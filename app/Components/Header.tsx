@@ -22,10 +22,10 @@ const Header = () => {
   };
   return (
     <>
-      <header className="flex justify-center items-center p-4 text-very-dark-primary">
+      <header className="flex justify-center items-center p-4 text-very-dark-primary z-20">
         <Link href="/">
           <motion.h1
-            className="font-bold text-2xl ml-10"
+            className="w-full font-bold text-2xl ml-10"
             whileTap={{
               scale: 0.9,
               transition: { duration: 0.3 },
@@ -48,9 +48,9 @@ const Header = () => {
                 transition: {
                   type: "spring",
                   bounce: 0,
-                  duration: 0.7,
-                  delayChildren: 0.3,
-                  staggerChildren: 0.05,
+                  duration: 0.4,
+                  delayChildren: 0.1,
+                  staggerChildren: 0.01,
                 },
               },
               closed: {
@@ -71,6 +71,14 @@ const Header = () => {
             >
               <Link href="/AboutMe" onClick={() => handleMenu()}>
                 About me
+              </Link>
+            </motion.li>
+            <motion.li
+              className="hover:bg-slate-200 duration-150 py-2 px-5 rounded-lg"
+              variants={menuOptionsVariant}
+            >
+              <Link href="/Projects" onClick={() => handleMenu()}>
+                Projects
               </Link>
             </motion.li>
           </motion.ul>

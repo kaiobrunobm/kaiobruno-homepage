@@ -10,8 +10,9 @@ interface project {
 
 const page = () => {
   return (
-    <main className="h-full py-10">
-      <section className="h-full flex justify-center items-center">
+    <main className="h-full pt-20 pb-10">
+      <section className="h-full flex flex-col justify-center items-center">
+        <h1 className="font-bold text-3xl pb-10">Projects</h1>
         <div className="h-full flex flex-wrap justify-center items-center gap-5">
           <ProjectCard
             name="Mobills Clone"

@@ -22,7 +22,7 @@ const Header = () => {
   };
   return (
     <>
-      <header className="flex justify-center items-center p-4 text-very-dark-primary z-20">
+      <header className="h-[7vh] w-full fixed top-0 bg-very-light-primary/40 flex justify-center items-center p-4 text-very-dark-primary z-20">
         <Link href="/">
           <motion.h1
             className="w-full font-bold text-2xl ml-10"

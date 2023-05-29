@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-very-light-primary">
       <body className={inter.className}>
-        <div className="h-screen grid grid-rows-[8%_84%_8%] text-very-dark-primary">
+        <div className="flex flex-col items-start justify-between text-very-dark-primary">
           <Header />
           {children}
           <Footer />

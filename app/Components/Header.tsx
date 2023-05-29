@@ -66,7 +66,7 @@ const Header = () => {
             className="flex flex-col gap-1 mt-3 bg-white rounded-md text-primary p-6 text-lg"
           >
             <motion.li
-              className="hover:bg-slate-200 duration-150 py-2 px-5 rounded-lg"
+              className="md:hover:bg-slate-200 duration-150 py-2 px-5 rounded-lg"
               variants={menuOptionsVariant}
             >
               <Link href="/AboutMe" onClick={() => handleMenu()}>
@@ -74,7 +74,7 @@ const Header = () => {
               </Link>
             </motion.li>
             <motion.li
-              className="hover:bg-slate-200 duration-150 py-2 px-5 rounded-lg"
+              className="md:hover:bg-slate-200 duration-150 py-2 px-5 rounded-lg"
               variants={menuOptionsVariant}
             >
               <Link href="/Projects" onClick={() => handleMenu()}>

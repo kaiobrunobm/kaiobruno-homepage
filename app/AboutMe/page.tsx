@@ -1,6 +1,12 @@
 "use client";
 import Image from "next/image";
-import { DotsThreeOutline } from "@phosphor-icons/react";
+import {
+  DotsThreeOutline,
+  EnvelopeSimple,
+  InstagramLogo,
+  LinkedinLogo,
+} from "@phosphor-icons/react";
+import { animate, motion } from "framer-motion";
 
 const Home = () => {
   return (
@@ -14,7 +20,7 @@ const Home = () => {
           className="rounded-full outline-dashed outline-2 outline-offset-4 outline-primary "
         />
         <div className="max-w-3xl border-t-4 border-dashed border-primary my-16">
-          <p className="text-center font-medium pt-3 text-text ">
+          <p className="text-center font-medium pt-6 text-text md:text-lg lg:text-xl ">
             I&apos;m deeply passionate about technology, web development,art and
             the world. They are my sources of inspiration and fuel my
             creativity. I love coding, designing websites, and expressing myself
@@ -24,9 +30,17 @@ const Home = () => {
           </p>
 
           <div className="mt-10">
-            <h3 className="font-bold text-xl text-text">Experience.</h3>
-            <div className="flex flex-wrap  items-center gap-6 mt-4">
-              <figure className="flex flex-col items-center ">
+            <h3 className="font-bold text-xl text-text md:text-2xl lg:text-3xl">
+              Experience.
+            </h3>
+            <div className="flex flex-wrap  items-center gap-6 mt-4 md:mt-6 lg:mt-9">
+              <motion.figure
+                className="flex flex-col items-center cursor-pointer"
+                whileHover={{
+                  y: -5,
+                  transition: { duration: 0.2 },
+                }}
+              >
                 <Image
                   src="/react.svg"
                   alt="react.js logo"
@@ -36,9 +50,15 @@ const Home = () => {
                 <figcaption className="text-text font-semibold">
                   React.js
                 </figcaption>
-              </figure>
+              </motion.figure>
 
-              <div>
+              <motion.div
+                className="cursor-pointer"
+                whileHover={{
+                  y: -5,
+                  transition: { duration: 0.2 },
+                }}
+              >
                 <svg
                   aria-label="Next.js logotype"
                   height="18"
@@ -62,10 +82,10 @@ const Home = () => {
                     fill="#fff"
                   ></path>
                   <path
-                    clip-rule="evenodd"
+                    clipRule="evenodd"
                     d="M80.907 79.339L17.0151 0H0V79.3059H13.6121V16.9516L63.8067 79.339H80.907Z"
                     fill="#fff"
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                   ></path>
                   <path
                     d="M333.607 78.8546C332.61 78.8546 331.762 78.5093 331.052 77.8186C330.342 77.1279 329.991 76.2917 330 75.3011C329.991 74.3377 330.342 73.5106 331.052 72.8199C331.762 72.1292 332.61 71.7838 333.607 71.7838C334.566 71.7838 335.405 72.1292 336.115 72.8199C336.835 73.5106 337.194 74.3377 337.204 75.3011C337.194 75.9554 337.028 76.5552 336.696 77.0914C336.355 77.6368 335.922 78.064 335.377 78.373C334.842 78.6911 334.252 78.8546 333.607 78.8546Z"
@@ -80,8 +100,14 @@ const Home = () => {
                     fill="#fff"
                   ></path>
                 </svg>
-              </div>
-              <figure className="flex flex-col items-center">
+              </motion.div>
+              <motion.figure
+                whileHover={{
+                  y: -5,
+                  transition: { duration: 0.2 },
+                }}
+                className="flex flex-col items-center cursor-pointer"
+              >
                 <Image
                   src="/javascript.svg"
                   alt="javascript logo"
@@ -91,28 +117,58 @@ const Home = () => {
                 <figcaption className="font-semibold text-text">
                   Javascript
                 </figcaption>
-              </figure>
-              <figure className="flex flex-col items-center">
+              </motion.figure>
+              <motion.figure
+                whileHover={{
+                  y: -5,
+                  transition: { duration: 0.2 },
+                }}
+                className="flex flex-col items-center cursor-pointer"
+              >
                 <Image src="/html.svg" alt="html logo" height={58} width={58} />
                 <figcaption className="font-semibold text-text">
                   HTML
                 </figcaption>
-              </figure>
-              <figure className="flex flex-col items-center">
+              </motion.figure>
+              <motion.figure
+                whileHover={{
+                  y: -5,
+                  transition: { duration: 0.2 },
+                }}
+                className="flex flex-col items-center cursor-pointer"
+              >
                 <Image src="/css.svg" alt="css logo" height={58} width={58} />
                 <figcaption className="font-semibold text-text">CSS</figcaption>
-              </figure>
-              <figure className="flex flex-col items-center">
+              </motion.figure>
+              <motion.figure
+                whileHover={{
+                  y: -5,
+                  transition: { duration: 0.2 },
+                }}
+                className="flex flex-col items-center cursor-pointer"
+              >
                 <Image src="/git.svg" alt="git logo" height={58} width={58} />
                 <figcaption className="font-semibold text-text">Git</figcaption>
-              </figure>
-              <figure className="flex flex-col items-center">
+              </motion.figure>
+              <motion.figure
+                whileHover={{
+                  y: -5,
+                  transition: { duration: 0.2 },
+                }}
+                className="flex flex-col items-center cursor-pointer"
+              >
                 <Image src="/sass.svg" alt="sass logo" height={58} width={58} />
                 <figcaption className="font-semibold text-text">
                   Sass
                 </figcaption>
-              </figure>
-              <figure className="flex flex-col items-center">
+              </motion.figure>
+              <motion.figure
+                whileHover={{
+                  y: -5,
+                  transition: { duration: 0.2 },
+                }}
+                className="flex flex-col items-center cursor-pointer"
+              >
                 <Image
                   src="/bootstrap.svg"
                   alt="bootstrap logo"
@@ -122,8 +178,14 @@ const Home = () => {
                 <figcaption className="font-semibold text-text">
                   Bootstrap
                 </figcaption>
-              </figure>
-              <figure className="flex flex-col items-center">
+              </motion.figure>
+              <motion.figure
+                whileHover={{
+                  y: -5,
+                  transition: { duration: 0.2 },
+                }}
+                className="flex flex-col items-center cursor-pointer"
+              >
                 <Image
                   src="/tailwind.svg"
                   alt="tailwind logo"
@@ -133,8 +195,14 @@ const Home = () => {
                 <figcaption className="font-semibold text-text">
                   Tailwind
                 </figcaption>
-              </figure>
-              <figure className="flex flex-col items-center">
+              </motion.figure>
+              <motion.figure
+                whileHover={{
+                  y: -5,
+                  transition: { duration: 0.2 },
+                }}
+                className="flex flex-col items-center cursor-pointer"
+              >
                 <Image
                   src="/typescript.svg"
                   alt="typescript logo"
@@ -144,8 +212,14 @@ const Home = () => {
                 <figcaption className="font-semibold text-text">
                   Typescript
                 </figcaption>
-              </figure>
-              <figure className="flex flex-col items-center">
+              </motion.figure>
+              <motion.figure
+                whileHover={{
+                  y: -5,
+                  transition: { duration: 0.2 },
+                }}
+                className="flex flex-col items-center cursor-pointer"
+              >
                 <Image
                   src="/figma.svg"
                   alt="figma logo"
@@ -155,10 +229,45 @@ const Home = () => {
                 <figcaption className="font-semibold text-text">
                   Figma
                 </figcaption>
-              </figure>
+              </motion.figure>
             </div>
             <div className="flex items-center justify-center mt-10">
               <DotsThreeOutline size={34} className="text-text" weight="fill" />
+            </div>
+            <div className="flex items-center justify-center gap-4 mt-6">
+              <motion.a
+                whileHover={{
+                  y: -5,
+                  transition: { duration: 0.2 },
+                }}
+                href="mailto:bmkaiobruno@gmail.com"
+              >
+                <EnvelopeSimple
+                  size={34}
+                  className="text-primary"
+                  target="_blank"
+                />
+              </motion.a>
+              <motion.a
+                whileHover={{
+                  y: -5,
+                  transition: { duration: 0.2 },
+                }}
+                href="https://www.instagram.com/kaiobrunobm/"
+                target="_blank"
+              >
+                <InstagramLogo size={34} className="text-primary" />
+              </motion.a>
+              <motion.a
+                whileHover={{
+                  y: -5,
+                  transition: { duration: 0.2 },
+                }}
+                href="https://www.linkedin.com/in/kaiobrunobm/"
+                target="_blank"
+              >
+                <LinkedinLogo size={34} className="text-primary" />
+              </motion.a>
             </div>
           </div>
         </div>

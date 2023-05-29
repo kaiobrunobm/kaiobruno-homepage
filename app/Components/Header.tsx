@@ -22,10 +22,10 @@ const Header = () => {
   };
   return (
     <>
-      <header className="h-[7vh] w-full fixed top-0 bg-background/40 flex justify-center items-center p-4 text-very-dark-primary z-20">
+      <header className="h-[7vh] w-full fixed top-0 bg-background/40 backdrop-blur-md flex justify-center items-center p-4 text-very-dark-primary z-20">
         <Link href="/">
           <motion.h1
-            className="w-full font-bold text-2xl ml-10 text-text"
+            className="w-full font-bold text-2xl ml-10 text-text md:ml-0"
             whileTap={{
               scale: 0.9,
               transition: { duration: 0.3 },
@@ -65,22 +65,22 @@ const Header = () => {
             style={{ pointerEvents: isOpen ? "auto" : "none" }}
             className="flex flex-col gap-1 mt-3 bg-white rounded-md text-secondary p-6 text-lg"
           >
-            <motion.li
-              className="md:hover:bg-slate-200 duration-150 py-2 px-5 rounded-lg"
-              variants={menuOptionsVariant}
-            >
-              <Link href="/AboutMe" onClick={() => handleMenu()}>
+            <Link href="/AboutMe" onClick={() => handleMenu()}>
+              <motion.li
+                className="md:hover:bg-slate-200 duration-150 py-2 px-5 rounded-lg"
+                variants={menuOptionsVariant}
+              >
                 About me
-              </Link>
-            </motion.li>
-            <motion.li
-              className="md:hover:bg-slate-200 duration-150 py-2 px-5 rounded-lg"
-              variants={menuOptionsVariant}
-            >
-              <Link href="/Projects" onClick={() => handleMenu()}>
+              </motion.li>
+            </Link>
+            <Link href="/Projects" onClick={() => handleMenu()}>
+              <motion.li
+                className="md:hover:bg-slate-200 duration-150 py-2 px-5 rounded-lg"
+                variants={menuOptionsVariant}
+              >
                 Projects
-              </Link>
-            </motion.li>
+              </motion.li>
+            </Link>
           </motion.ul>
         </motion.nav>
       </header>

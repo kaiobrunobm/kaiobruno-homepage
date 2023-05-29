@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="bg-very-light-primary">
+    <html lang="en" className="bg-background">
       <body className={inter.className}>
         <div className="flex flex-col items-start justify-between text-very-dark-primary">
           <Header />

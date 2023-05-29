@@ -5,9 +5,11 @@ const Home = () => {
   return (
     <main className="h-[94vh] w-full">
       <section className="h-full p-3 flex flex-col items-center justify-center">
-        <p className="max-w-md text-center text-xl font-bold">
-          <div className="text-3xl mb-3">Hi I&apos;m Kaio Bruno</div> A junior
-          web developer passionate with technology, art and the world!
+        <p className="max-w-md text-center text-xl font-bold text-text">
+          <div className="text-3xl mb-3 text-primary">
+            Hi I&apos;m Kaio Bruno
+          </div>
+          A junior web developer passionate with technology, art and the world!
         </p>
       </section>
     </main>

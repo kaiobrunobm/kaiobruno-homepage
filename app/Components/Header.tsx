@@ -22,21 +22,21 @@ const Header = () => {
   };
   return (
     <>
-      <header className="h-[7vh] w-full fixed top-0 bg-very-light-primary/40 flex justify-center items-center p-4 text-very-dark-primary z-20">
+      <header className="h-[7vh] w-full fixed top-0 bg-background/40 flex justify-center items-center p-4 text-very-dark-primary z-20">
         <Link href="/">
           <motion.h1
-            className="w-full font-bold text-2xl ml-10"
+            className="w-full font-bold text-2xl ml-10 text-text"
             whileTap={{
               scale: 0.9,
               transition: { duration: 0.3 },
             }}
           >
-            KaioBrunoDev
+            KaioBruno<span className="text-primary">Dev</span>
           </motion.h1>
         </Link>
 
         <motion.nav
-          className="absolute top-1  left-3"
+          className="absolute top-1  left-3 text-text"
           initial={false}
           animate={isOpen ? "open" : "closed"}
         >
@@ -63,7 +63,7 @@ const Header = () => {
               },
             }}
             style={{ pointerEvents: isOpen ? "auto" : "none" }}
-            className="flex flex-col gap-1 mt-3 bg-white rounded-md text-primary p-6 text-lg"
+            className="flex flex-col gap-1 mt-3 bg-white rounded-md text-secondary p-6 text-lg"
           >
             <motion.li
               className="md:hover:bg-slate-200 duration-150 py-2 px-5 rounded-lg"

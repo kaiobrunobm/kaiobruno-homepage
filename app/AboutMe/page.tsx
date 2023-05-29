@@ -7,12 +7,12 @@ const Home = () => {
         <Image
           src="/my-photo.png"
           alt="Kaio Bruno photo"
-          width={380}
-          height={380}
-          className="rounded-full outline-dashed outline-4 outline-offset-4 outline-primary "
+          width={400}
+          height={400}
+          className="rounded-full outline-dashed outline-2 outline-offset-4 outline-primary "
         />
-        <div className="max-w-3xl border-t-8 border-dashed border-primary mt-16">
-          <p className="text-center text-dark-primary pt-3">
+        <div className="max-w-3xl border-t-4 border-dashed border-primary my-16">
+          <p className="text-center text-dark-primary pt-3 text-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
             culpa reiciendis aperiam porro voluptatibus sit reprehenderit,
             laborum amet mollitia?Lorem ipsum dolor sit amet consectetur
